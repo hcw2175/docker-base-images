@@ -12,6 +12,7 @@
 * 优化 JDK 内存配置：`-server -Xmx1G -Xms1G -Xmn200M -Duser.timezone=GMT+08`
 * 增加中国时区配置
 * 增加 nano 编辑工具
+* 增加普通用户 `tomcat`，用户 uid=2000，并使用 tomcat 用户来启动应用
 
 
 
@@ -23,6 +24,7 @@
 
 * 优化 JDK 内存配置：`-server -Xmx1G -Xms1G -Xmn200M -Duser.timezone=GMT+08`
 * 增加 nano 编辑工具
+* 增加普通用户 `jdkusr`，用户 uid=2000，并使用 jdkusr 用户来启动应用
 
 
 
