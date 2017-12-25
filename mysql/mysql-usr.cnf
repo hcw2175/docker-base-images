@@ -1,0 +1,22 @@
+# 设置utf8，避免查询乱码1
+[client]
+default-character-set=utf8mb4
+
+[mysql]
+default-character-set=utf8mb4
+
+[mysqld]
+collation-server=utf8mb4_unicode_ci
+character-set-server=utf8mb4
+default_password_lifetime=0
+default-time-zone='+8:00'
+#explicit_defaults_for_timestamp=true
+
+# 服务唯一id(值可以设为其它)
+server-id=1
+
+# 开启二维码
+log-bin=mysql-bin
+
+# 二进制日志保留14天，减少空间占用
+expire-logs-days=14

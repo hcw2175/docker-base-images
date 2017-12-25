@@ -1,4 +1,6 @@
-# 基于 omcat:8.5-jre8 镜像
+# 
+# docker pull xohaa/tomcat:1.2
+# 基于 tomcat:8.5-jre8 镜像
 From tomcat:8.5-jre8
 
 # 维护者：iotp-hucw<hcw2175@163.com>
