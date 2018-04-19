@@ -11,10 +11,11 @@ COPY server.xml /usr/local/tomcat/conf/server.xml
 COPY localtime /etc/localtime
 
 # 设置 java 运行内存、时区
-ENV JAVA_OPTS -server -Xmx1G -Xms1G -Xmn200M -Duser.timezone=GMT+08
+# ENV JAVA_OPTS -server -Xmx1G -Xms1G -Xmn200M -Duser.timezone=GMT+08
+ENV JAVA_OPTS -server -Duser.timezone=GMT+08
 
 # 更新软索引并安装 nano 工具
-RUN apt-get update &&  apt-get install nano 
+# RUN apt-get update &&  apt-get install nano 
 
 # 暴露端口 8080
 EXPOSE 8080
